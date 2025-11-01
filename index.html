@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiselőadás-Transition</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1> A CSS Transition bemutatása</h1>
+    <p class="intro">
+      Ezekben a példákban bemutatom hogyan működik a <b>CSS Transition</b> ami lehetővé teszi hogy egy elem tulajdonságait <i>fokozatosan</i> változztasunk meg.
+    </p>
+  </header>
+
+  <main class="container">
+
+   
+    <section>
+      <h2>-Egyszerű átmenet (width)</h2>
+      <p>Ha az egeret a elem fölé viszed a szélessége megnő.</p>
+      <div class="box width"></div>
+    </section>
+
+  
+    <section>
+      <h2>-Több tulajdonság változtatása</h2>
+      <p>Ha itt az egeret az elem fölé viszed akkor megváltozik a szélesség,magasság,háttérszín is.</p>
+      <div class="box multi"></div>
+    </section>
+
+    
+    <section>
+      <h2>-Színváltozás átmenettel</h2>
+      <p>Itt a doboz háttérszine lassan megváltozik,de nem olyan gyorsan.</p>
+      <div class="box color"></div>
+    </section>
+
+ <section>
+  <h2>-Sebességgörbék (timing function)</h2>
+  <p>Ugyanaz a szélesség-változás, de más „sebességgel” történik. A különbség az, <b>hogyan gyorsul fel vagy lassul le</b> az animáció.</p>
+
+  <div class="timing-container">
+    <div class="box timing linear"></div> 
+    <div class="box timing ease"></div>
+    <div class="box timing ease-in"></div>
+    <div class="box timing ease-out"></div>
+    <div class="box timing ease-in-out"></div>
+  </div>
+
+  <ul class="labels">
+    <li><b>linear:</b> egyenletes mozgás,mindig UGYANAZZAL a sebességgel</li>
+    <li><b>ease:</b> lassan indul aztán felgyorsul és végül újra lelassul a végén</li>
+    <li><b>ease-in:</b> lassan indul > gyorsul a végére</li>
+    <li><b>ease-out:</b> gyorsan indul > lassul a végére</li>
+    <li><b>ease-in-out:</b> lassan indul,gyorsul,majd megint lelassul</li>
+  </ul>
+</section>
+
+
+    
+    <section>
+      <h2>-Késleltetéssel (delay)</h2>
+      <p>Az elem fél másodperccel az egér ráhelyezése után kezd el megmozdulni.</p>
+      <div class="box delay"></div>
+    </section>
+
+    
+    <section>
+      <h2>-Forgatás és nagyítás (transform + transition)</h2>
+      <p>A doboz elfordul + megnő a mérete ÉS közben a háttérszíne megváltozik.</p>
+      <div class="box transform"></div>
+    </section>
+
+    
+    <section>
+      <h2>-Lekerekített sarkok átmenettel</h2>
+      <p>Itt a border-radius értéke változik fokozatosan.</p>
+      <div class="box radius"></div>
+    </section>
+
+    
+    <section>
+      <h2>-Árnyék változtatása</h2>
+      <p>Amikor fölé viszed az egeret akkor egy enyhe/lágy árnyék jelenik meg.</p>
+      <div class="box shadow"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>CSS Transition Bemutató | Készítette: Németh Donát</p>
+  </footer>
+</body>
+</html>
